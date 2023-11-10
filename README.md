@@ -27,17 +27,17 @@ Wanderlust Travel Planner is a Flask-based web application that helps users plan
 Create a MySQL database and update the configuration in config.py.
 Run the following commands to set up the database:
 
-```bash
+
 flask db init
 flask db migrate
 flask db upgrade
 
 4. **Running the Application:**
-```bash
+
 flask run
 
 5.**Accessing the Application:**
-```bash
+
 Open a web browser and go to http://127.0.0.1:5000/.
 
 ## Destination
@@ -68,40 +68,40 @@ curl -X PUT http://127.0.0.1:5000/itinerary/1 -H "Content-Type: application/json
 curl -X DELETE http://127.0.0.1:5000/itinerary/1
 
 ##Expenses
-# Get Expenses
+**Get Expenses**
 curl http://127.0.0.1:5000/expenses
 
-# Create Expense
+**Create Expense**
 curl -X POST http://127.0.0.1:5000/expense -H "Content-Type: application/json" -d '{"name": "New Expense", "amount": 100.0, "category": "Food", "date": "2023-11-10"}'
 
-# Update Expense
+**Update Expense**
 curl -X PUT http://127.0.0.1:5000/expense/1 -H "Content-Type: application/json" -d '{"name": "Updated Expense", "amount": 150.0, "category": "Accommodation", "date": "2023-11-10"}'
 
-# Delete Expense
+**Delete Expense**
 curl -X DELETE http://127.0.0.1:5000/expense/1
 
 
 ##Hotels
-# Get Hotels
+**Get Hotels**
 curl http://127.0.0.1:5000/hotels
 
-# Create Hotel
+**Create Hotel**
 curl -X POST http://127.0.0.1:5000/hotel -H "Content-Type: application/json" -d '{"name": "New Hotel", "location": "Hotel Location", "pricePerNight": 120.0, "amenities": "Wi-Fi"}'
 
-# Update Hotel
+**Update Hotel**
 curl -X PUT http://127.0.0.1:5000/hotel/1 -H "Content-Type: application/json" -d '{"name": "Updated Hotel", "location": "Updated Location", "pricePerNight": 150.0, "amenities": "Swimming Pool"}'
 
-# Delete Hotel
+**Delete Hotel**
 curl -X DELETE http://127.0.0.1:5000/hotel/1
 
-##Additional Notes
+# Additional Notes
 Weather API Key:
 If using the weather integration feature, obtain an API key from [Weather API Provider] and update it in the configuration.
 
 Collaborative Planning:
 (Provide any additional instructions or considerations for collaborative planning)
 
-Data Export:
+**Data Export:**
 (Explain how to use data export features)
 
 ##Contributing
