@@ -40,24 +40,7 @@ flask run
 ```bash
 Open a web browser and go to http://127.0.0.1:5000/.
 
-
-***Additional Notes***
-Weather API Key:
-If using the weather integration feature, obtain an API key from [Weather API Provider] and update it in the configuration.
-
-Collaborative Planning:
-(Provide any additional instructions or considerations for collaborative planning)
-
-Data Export:
-(Explain how to use data export features)
-
-**Contributing**
-Contributions are welcome! Please follow the contribution guidelines before submitting pull requests.
-
-**License**
-This project is licensed under the MIT License.
-
-**Destination**
+## Destination
 # Get Destinations
 curl http://127.0.0.1:5000/destinations
 
@@ -84,7 +67,7 @@ curl -X PUT http://127.0.0.1:5000/itinerary/1 -H "Content-Type: application/json
 # Delete Itinerary
 curl -X DELETE http://127.0.0.1:5000/itinerary/1
 
-**Expenses**
+##Expenses
 # Get Expenses
 curl http://127.0.0.1:5000/expenses
 
@@ -98,7 +81,7 @@ curl -X PUT http://127.0.0.1:5000/expense/1 -H "Content-Type: application/json" 
 curl -X DELETE http://127.0.0.1:5000/expense/1
 
 
-**Hotels**
+##Hotels
 # Get Hotels
 curl http://127.0.0.1:5000/hotels
 
@@ -111,8 +94,18 @@ curl -X PUT http://127.0.0.1:5000/hotel/1 -H "Content-Type: application/json" -d
 # Delete Hotel
 curl -X DELETE http://127.0.0.1:5000/hotel/1
 
+##Additional Notes
+Weather API Key:
+If using the weather integration feature, obtain an API key from [Weather API Provider] and update it in the configuration.
 
+Collaborative Planning:
+(Provide any additional instructions or considerations for collaborative planning)
 
+Data Export:
+(Explain how to use data export features)
 
+##Contributing
+Contributions are welcome! Please follow the contribution guidelines before submitting pull requests.
 
-
+##License
+This project is licensed under the MIT License.
